@@ -1,0 +1,29 @@
+ul{
+  list-style: none;
+  padding: 2px 5px;
+  margin: 0;
+  width: 600px;
+  border: 1px solid #999;
+}
+
+li{
+  position: relative;
+  padding: 10px 5px;
+  border-bottom: 1px solid #999;
+}
+li:last-child{
+  border: none;
+}
+
+.cls{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: lightcoral;
+  color: aliceblue;
+  border-color: lightpink;
+}
+.cls:active{
+  
+}

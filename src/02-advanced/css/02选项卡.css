@@ -1,0 +1,73 @@
+html,body{
+  padding: 0;
+  margin: 0;
+}
+ul.footer{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-top: 1px #666 solid;
+  background: white;
+}
+.footer li{
+  flex: 1;
+  text-align: center;
+  position: relative;
+  
+}
+.footer li.active{
+  background: #999;
+  color: rgb(253, 253, 253);
+}
+.footer li::after{
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  height: 40px;
+  border-left: 1px solid black;
+}
+.footer li:last-child::after{
+  display: none;
+}
+
+.cinema{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.cinema li{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50px;
+  border-bottom: 1px solid black;
+  padding: 5px 0;
+}
+.cinema li>*{
+  /* flex: 1; */
+  margin: 0;
+  padding: 0;
+  
+}
+.cinema li h4{
+  font-size: 20px;
+}
+.cinema li p{
+  font-size: 14px;
+  color: #666;
+}
+.cinemaIpt{
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  line-height: 40px;
+}
